@@ -5,6 +5,15 @@
         
         { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451759, 40.5026940] } },
         
-        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451689, 40.502671] } }
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451769, 40.5026940] } },
+        
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451749, 40.5026940] } },
+        
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451699, 40.502671] } },
+        
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451709, 40.502671] } },
+        
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451719, 40.502671] } }
+        
     ]
 }

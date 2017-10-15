@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tracker</title>
+    </head>
+    <body>
+        <h1 id="long"></h1>
+        <h1 id="lat"></h1>
+        <script>
+            function getLocation() {
+                var long = document.getElementById("long");
+                var lat = document.getElementById("lat");
+                if ("geolocation" in navigator) {
+                  navigator.geolocation.getCurrentPosition(function(position) {
+                      document.getElementById("long").innerHTML = position.coords.longitude;
+                      document.getElementById("lat").innerHTML = window.lat = position.coords.latitude;
+                  });
+                } else {
+                  document.getElementById("long").innerHTML = "nope";
+                }
+            }
+            
+            setInterval(getLocation, 2000);
+            
+        </script>
+    </body>
+</html>
