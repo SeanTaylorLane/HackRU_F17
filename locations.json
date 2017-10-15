@@ -1,0 +1,10 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451751, 40.502645] } },
+        
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451759, 40.5026940] } },
+        
+        { "type": "Feature", "properties": { "time": 1507425650893}, "geometry": { "type": "Point", "coordinates": [-74.451689, 40.502671] } }
+    ]
+}

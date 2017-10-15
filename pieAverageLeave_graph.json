@@ -1,0 +1,54 @@
+{
+    "chart": {
+        "legendItemFontSize": "11",
+        "legendIconScale": "2",
+        "legendBackgroundColor": "#A2D5F2",
+        "legendBackgroundAlpha": "100",
+        "legendBorderAlpha": "0",
+        "enableSmartLabels": "0",
+        "isSmartLineSlanted": "0",
+        "smartLineColor": "#07689F",
+        "smartLineThickness": "2",
+        "showToolTip": "1",
+        "toolTipColor": "#ffffff",
+        "toolTipBorderThickness": "1",
+        "toolTipBgColor": "#000000",
+        "toolTipBgAlpha": "100",
+        "toolTipBorderRadius": "2",
+        "toolTipPadding": "5",
+        "captionFontBold": "0",
+        "caption": "Attendee Loss per Hour",
+        "captionFontSize": "25",
+        "valueFontSize": "14",
+        "baseFont": "OpenSans",
+        "baseFontColor": "#07689F",
+        "bgColor": "#FAFAFA",
+        "bgAlpha": "100",
+        "canvasBgColor": "#FAFAFA",
+        "showBorder": "0",
+        "use3DLighting": "0",
+        "startingAngle": "310",
+        "showLabels": "0",
+        "showPercentValues": "1",
+        "showLegend": "1",
+        "defaultCenterLabel": "Total revenue: $64.08K",
+        "centerLabel": "Revenue from $label: $value",
+        "centerLabelBold": "1",
+        "showTooltip": "0",
+        "decimals": "0",
+        "useDataPlotColorForLabels": "1",
+        "paletteColors": "#A2D5F2,#FF7E67"
+    },
+    "data": [
+        {
+            "label": "",
+            "value": "83.96%"
+        },
+        {
+            
+            "label": "Attendee Lost",
+            "value": "6.04%",
+            "isSliced": "1"
+        }
+    ]
+}

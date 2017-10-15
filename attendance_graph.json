@@ -1,0 +1,78 @@
+{
+        "chart": {
+            "xAxisNameFontSize": "14",
+            "yAxisNameFontSize": "14",
+            "xAxisNameFontBold": "0",
+            "yAxisNameFontBold": "0",
+            "showBorder": "0",
+            "caption": "Attendance Throughout Event",
+            "baseFont": "Open Sans",
+            "baseFontColor": "#07689F",
+            "xAxisName": "Time (in Hours)",
+            "yAxisName": "Attendees",
+            "paletteColors": "#A2D5F2",
+            "bgColor": "#FAFAFA",
+            "bgAlpha": "100",
+            "canvasBgColor": "#FAFAFA",
+            "canvasbgAlpha": "100",
+            "showCanvasBorder": "0",
+            "plotBorderColor": "#07689F",
+            "plotBorderAlpha": "0",
+            "usePlotGradientColor": "0",
+            "plotFillAlpha": "80",
+            "showXAxisLine": "1",
+            "axisLineAlpha": "25",
+            "divLineAlpha": "10",
+            "showValues": "1",
+            "showAlternateHGridColor": "0",
+            "captionFontSize": "25",
+            "captionFontBold": "0",
+            "toolTipColor": "#ffffff",
+            "toolTipBorderThickness": "1",
+            "toolTipBgColor": "#000000",
+            "toolTipBgAlpha": "100",
+            "toolTipBorderRadius": "2",
+            "toolTipPadding": "5"
+        },
+
+        "data": [{
+            "label": "0",
+            "value": "19"
+        }, {
+            "label": "",
+            "value": "31"
+        }, {
+            "label": "",
+            "value": "40"
+        }, {
+            "label": "",
+            "value": "42"
+        }, {
+            "label": "1",
+            "value": "40"
+        }, {
+            "label": "",
+            "value": "42"
+        }, {
+            "label": "",
+            "value": "41"
+        }, {
+            "label": "",
+            "value": "40"
+        }, {
+            "label": "2",
+            "value": "36"
+        }, {
+            "label": "",
+            "value": "34"
+        }, {
+            "label": "",
+            "value": "30"
+        }, {
+            "label": "",
+            "value": "25"
+        }, {
+            "label": "3",
+            "value": "16"
+        }]
+    }

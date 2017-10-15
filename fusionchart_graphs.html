@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>GRAPHS</title>
+<link type="text/css" rel="stylesheet" href="text.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    
+
+  FusionCharts.ready(function(){
+    var pieAverageLeaveChart = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'pieAverageLeave-chart-container',
+    width: '49%',
+    height: '400',
+    dataFormat: 'jsonurl',
+//    dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/attendance_graph.json'
+    dataSource: 'http://localhost:8000/pieAverageLeave_graph.json'
+    
+});
+      
+    var pieRetentionChart = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'pieRetention-chart-container',
+    width: '49%',
+    height: '400',
+    dataFormat: 'jsonurl',
+//    dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/attendance_graph.json'
+    dataSource: 'http://localhost:8000/pieRetention_graph.json'
+    
+});
+    
+    var attendanceChart = new FusionCharts({
+    type: 'area2d',
+    renderAt: 'attendance-chart-container',
+    width: '1000',
+    height: '400',
+    dataFormat: 'jsonurl',
+//    dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/attendance_graph.json'
+    dataSource: 'http://localhost:8000/attendance_graph.json'
+    
+});
+    var leaveChart = new FusionCharts({
+      type: 'msarea',
+      renderAt: 'leave-chart-container',
+      width: '1000',
+      height: '400',
+      dataFormat: 'jsonurl',
+//      dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/leave_graph.json'
+      dataSource: 'http://localhost:8000/leave_graph.json'
+    });
+    
+    pieAverageLeaveChart.render();
+    pieRetentionChart.render();
+    attendanceChart.render();
+//    setInterval(function() { leaveChart.render(); }, 1000);
+    leaveChart.render();
+});
+</script>
+</head>
+<body>
+  <div id="pieRetention-chart-container" class="test">FusionCharts XT will load here!</div>
+  <div id="pieAverageLeave-chart-container" class="test">FusionCharts XT will load here!</div>
+  <div id="attendance-chart-container">FusionCharts XT will load here!</div>
+  <div id="leave-chart-container">Fuck me</div>
+</body>
+</html>

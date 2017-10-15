@@ -1,0 +1,172 @@
+{
+    "chart": {
+        "showValues": "0",
+        "paletteColors": "#A2D5F2,#FF7E67",
+        "xAxisNameFontSize": "14",
+        "yAxisNameFontSize": "14",
+        "xAxisNameFontBold": "0",
+        "yAxisNameFontBold": "0",
+        "showBorder": "0",
+        "caption": "Event Traffic",
+        "baseFont": "Open Sans",
+        "baseFontColor": "#07689F",
+        "xAxisName": "Time (in Hours)",
+        "yAxisName": "Delta (in People)",
+        "bgColor": "#FAFAFA",
+        "bgAlpha": "100",
+        "canvasBgColor": "#FAFAFA",
+        "canvasbgAlpha": "100",
+        "showCanvasBorder": "0",
+        "plotBorderColor": "#07689F",
+        "plotBorderAlpha": "0",
+        "usePlotGradientColor": "0",
+        "plotFillAlpha": "80",
+        "showXAxisLine": "1",
+        "axisLineAlpha": "25",
+        "divLineAlpha": "10",
+        "showAlternateHGridColor": "0",
+        "captionFontSize": "25",
+        "captionFontBold": "0",
+        "toolTipColor": "#ffffff",
+        "toolTipBorderThickness": "1",
+        "toolTipBgColor": "#000000",
+        "toolTipBgAlpha": "100",
+        "toolTipBorderRadius": "2",
+        "toolTipPadding": "5"
+    },
+    "categories": [
+        {
+            "category": [
+                {
+                    "label": "0"
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": "1"
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": "2"
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": ""
+                },
+                {
+                    "label": "3"
+                }
+            ]
+        }
+    ],
+    "dataset": [
+        {
+            "seriesname": "Attendees Arriving",
+            "data": [
+                {
+                    "value": "19"
+                },
+                {
+                    "value": "13"
+                },
+                {
+                    "value": "11"
+                },
+                {
+                    "value": "5"
+                },
+                {
+                    "value": "3"
+                },
+                {
+                    "value": "2"
+                },
+                {
+                    "value": "0"
+                },
+                {
+                    "value": "1"
+                },
+                {
+                    "value": "2"
+                },
+                {
+                    "value": "0"
+                },
+                {
+                    "value": "0"
+                },
+                {
+                    "value": "0"
+                },
+                {
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "seriesname": "Attendees Leaving",
+            "data": [
+                {
+                    "value": "0"
+                },
+                {
+                    "value": "1"
+                },
+                {
+                    "value": "2"
+                },
+                {
+                    "value": "3"
+                },
+                {
+                    "value": "7"
+                },
+                {
+                    "value": "2"
+                },
+                {
+                    "value": "1"
+                },
+                {
+                    "value": "2"
+                },
+                {
+                    "value": "6"
+                },
+                {
+                    "value": "2"
+                },
+                {
+                    "value": "4"
+                },
+                {
+                    "value": "5"
+                },
+                {
+                    "value": "9"
+                }
+            ]
+        }
+    ]
+}

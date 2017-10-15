@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+    <script type="text/javascript">
+    
+
+  FusionCharts.ready(function(){
+    var pieAverageLeaveChart = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'pieAverageLeave-chart-container',
+    width: '100%',
+    height: '400',
+    dataFormat: 'jsonurl',
+//    dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/attendance_graph.json'
+    dataSource: 'http://localhost:8000/pieAverageLeave_graph.json'
+    
+});
+      
+    var pieRetentionChart = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'pieRetention-chart-container',
+    width: '100%',
+    height: '400',
+    dataFormat: 'jsonurl',
+//    dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/attendance_graph.json'
+    dataSource: 'http://localhost:8000/pieRetention_graph.json'
+    
+});
+    
+    var attendanceChart = new FusionCharts({
+    type: 'area2d',
+    renderAt: 'attendance-chart-container',
+    width: '100%',
+    height: '400',
+    dataFormat: 'jsonurl',
+//    dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/attendance_graph.json'
+    dataSource: 'http://localhost:8000/attendance_graph.json'
+    
+});
+    var leaveChart = new FusionCharts({
+      type: 'msarea',
+      renderAt: 'leave-chart-container',
+      width: '100%',
+      height: '400',
+      dataFormat: 'jsonurl',
+//      dataSource: 'https://hackru-5d3f1.firebaseio.com/Graphs/FusionChart/leave_graph.json'
+      dataSource: 'http://localhost:8000/leave_graph.json'
+    });
+    
+    pieAverageLeaveChart.render();
+    pieRetentionChart.render();
+    attendanceChart.render();
+    leaveChart.render();
+});
+</script>
+  </head>
+  <body>
+    
+    <!-- MENU/USERPIC -->
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-1">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="col-10"></div>
+      <div class="col-1">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+      </div>
+    </div>
+    
+    <!-- HACKRU TITLE -->
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6"><h1>HackRU Fall 2017</h1></div>
+      <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <p class="info">3:00AM - 5:00AM, College Avenue Student Center</p>
+<!--        <p class="info">College Avenue Student Center</p>-->
+      </div>
+      <div class="col-4"></div>
+    </div>
+      
+       
+    <!-- ATTENDANCE CHART -->
+    <div class="row" style="margin-top: 70px;">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div id="attendance-chart-container" class="test">FusionCharts XT will load here!</div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    
+    <!-- PIE CHARTS-->
+    <div class="row" style="margin-top: 80px;">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div id="pieRetention-chart-container" class="test">FusionCharts XT will load here!</div>
+      </div>
+      <div class="col-4">
+          <div id="pieAverageLeave-chart-container" class="test">FusionCharts XT will load here!</div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    
+    <!-- LEAVE CHART -->
+    <div class="row" style="margin-top: 80px;">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div id="leave-chart-container" class="test">FusionCharts XT will load here!</div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    
+  </body>
+</html>
