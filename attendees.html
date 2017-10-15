@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>excel</title>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src='excelexportjs.js'></script>    
+    </head>
+    <body>
+      <div id="dvjson"></div>
+      <button id="DLtoExcel">Do it</button>
+      
+      <script>
+    
+	//assuming you have a json data as above
+	var data = [
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"},
+      {"Name":"Peter Jones", "eMail":"mymom@microsoft.com"},
+      {"Name":"John Doe", "eMail":"coolguy@gmail.com"}, 
+      {"Name":"Anna Smith", "eMail":"urmom@hotmail.com"}      
+      
+				]
+					
+	
+	var $btnDLtoExcel = $('#DLtoExcel');
+    $btnDLtoExcel.on('click', function () {
+      	$("#dvjson").excelexportjs({
+                    containerid: "dvjson"
+                       , datatype: 'json'
+                       , dataset: data
+                       , columns: getColumns(data)     
+                });
+
+    });
+
+      </script>
+      
+    </body>
+</html>
