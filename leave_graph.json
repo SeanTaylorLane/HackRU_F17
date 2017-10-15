@@ -1,5 +1,10 @@
 {
     "chart": {
+        "legendItemFontSize": "11",
+        "legendIconScale": "2",
+        "legendBackgroundColor": "#A2D5F2",
+        "legendBackgroundAlpha": "100",
+        "legendBorderAlpha": "0",
         "showValues": "0",
         "paletteColors": "#A2D5F2,#FF7E67",
         "xAxisNameFontSize": "14",

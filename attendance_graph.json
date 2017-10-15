@@ -5,7 +5,7 @@
             "xAxisNameFontBold": "0",
             "yAxisNameFontBold": "0",
             "showBorder": "0",
-            "caption": "Attendance Throughout Event",
+            "caption": "Attendance",
             "baseFont": "Open Sans",
             "baseFontColor": "#07689F",
             "xAxisName": "Time (in Hours)",
